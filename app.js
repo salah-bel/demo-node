@@ -12,6 +12,8 @@ mongoose
   .then(() => console.log("database Connected!"))
   .catch((err) => console.log("ERROR DB ::", err));
 
+  //test
+
 
 // middlewares
 app.set('view engine', 'ejs');
