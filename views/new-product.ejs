@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="m-5 text-center">Ajouter un produit</h1>
+
+    <div class="container">
+        <form class="w-75 m-auto" method="POST" action="/new-product">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Nom du produit</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Prix du produit</label>
+              <input type="number" class="form-control" id="exampleInputPassword1" name="price">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+          </form>
+    </div>
+</body>
+</html>
