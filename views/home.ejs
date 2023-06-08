@@ -14,21 +14,7 @@
   <div class="container">
   <div class="row row-cols-1 row-cols-md-2 g-4">
   
-    <% products.forEach(function(product){ %>
-      
-      <div class="col-4">
-        <div class="card">
-          <img src="https://media.sudouest.fr/1899314/1000x500/so-5ece72ab66a4bd757a411501-ph0.jpg?v=1590591458" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"><%= product.name %></h5>
-            <p class="card-text"> <%= product.price %></p>
-            <a href="/detail-product/<%= product._id %>">...voir details du produit</a>
-          </div>
-        </div>
-      </div>
-      
-      
-      <% }); %>
+
       
     </div>
   </div>

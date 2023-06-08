@@ -1,0 +1,13 @@
+<%- include('./partials/header.ejs') %>
+    <h1 class="m-5 text-center">Liste de Jeux</h1>
+
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between grap-2">
+        <% games.forEach(function(game){ %> <%-
+        include('./partials/game.card.ejs', {game}) %> <% }); %>
+      </div>
+    </div>
+
+    <script src="/js/bootstrap.js"></script>
+  </body>
+</html>

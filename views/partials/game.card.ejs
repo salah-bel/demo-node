@@ -1,0 +1,20 @@
+<div class="col-3 m-3 ">
+    <div class="card">
+      <img src="<%=game.thumbnail%>" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><%= game.title %></h5>
+        <p class="card-text"> <%= game.short_description.substring(0,55) %>
+          <a href="/detail-game/<%= game._id %>">...Lire la suite</a>
+        </p>
+        <div class="d-flex text-center justify-content-evenly">
+          <a href="/delete-game/<%= game._id %>">
+            <i class="fa-solid fa-trash"  style="font-size: 24px;"></i>
+          </a>
+          <a href="/edit-game/<%= game._id %>">
+            <i class="fa-solid fa-pen-to-square" style="font-size: 24px;"></i>
+          </a>
+        </div>
+      
+    </div>
+    </div>
+  </div>
